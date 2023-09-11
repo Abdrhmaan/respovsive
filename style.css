@@ -6,9 +6,10 @@
 }
 
 header{
-    background: tomato;
     width: 100%;
-    height: 100vh;
+    background: tomato;
+ 
+  
 }
 nav {
     background: #000;
@@ -16,16 +17,20 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px 5%;
+    width: 100%;
+   
 }
 nav  a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     padding: 10px;
+
 }
 nav ul li {
     display: inline-flex;
     padding: 0 20px;
+
 }
 .center{
     display: flex;
@@ -33,6 +38,12 @@ nav ul li {
     justify-content: center;
     margin-top: 16%;
     flex-direction: column;
+    width: 100%;
+}
+.center .img img{
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .about {
@@ -95,4 +106,129 @@ nav ul li {
     line-height: 30px;
 }
 
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    background: rgb(238, 242, 243);
+}
+form {
+    width: 500px;
+}
+form div {
+    padding-bottom: 20px;
+}
 
+label {
+    display: block;
+}
+
+form div input {
+    width: 100%;
+    padding: 20px 50px;
+    outline: none;
+}
+
+
+form div  textarea {
+    width: 200px;
+    height: 60px;
+    resize: none;
+    outline: none;
+}
+form button {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background: tomato;
+    border: 0;
+    outline: none;
+}
+
+#services {
+   margin: 0 5%;
+}
+.service_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    grid-gap: 10px;
+
+
+}
+.service_list div {
+    background: #262626;
+    padding: 40px;
+    font-weight: 400;
+    border-radius: 10px;
+    font-size: 13px;
+    transition: background 0.5s   transform 0.5s ;
+    color: #fff;
+}
+.service_list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+.title-ser{
+    margin: 10px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+@media  ( max-width: 650px){
+    
+    
+
+ .center{
+     padding: 10px;
+     margin-bottom: 80px;
+     padding-bottom: 30px;
+ }
+ .center .img img {
+   padding-bottom: 30px;
+   height: 200px;
+    
+}
+.about {
+    width: 80%;
+
+}
+.flex {
+
+    grid-template-columns: 1fr ;
+}
+
+.service_list div {
+
+    padding: 30px;
+
+}
+
+.contact {
+    width: 300px;
+    text-align: center;
+}
+.center form div {
+    width: 100%;
+}
+form div input {
+    width: 200px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+
+form button {
+    width: 80px;
+}
+
+}
